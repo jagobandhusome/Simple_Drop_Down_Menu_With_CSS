@@ -1,0 +1,42 @@
+*{margin:0px;padding:0px;}
+body{font-family:Arial,Sansarif,Helvetica;line-height:14px;font-weight:normal;font-size:14px;}
+img{padding:0px;margin:0px}
+.main{width:960px;margin:0px auto;background:#fff;border:2px solid #78B9FE;border-radius: 10px 10px 0px 0px;}
+.mainmenu{width:960px;background:#27844F;min-height:35px;font-size:15px;border-radius: 10px 10px 0px 0px;}
+
+
+/*menu start*/
+.mainmenu ul{list-style:none;margin:0px;padding:0px;display:block}
+.mainmenu ul li{float:left;padding:10px;border-left:1px solid #666;border-right:1px solid #C2BD1A;position:relative;}
+.mainmenu  ul li:first-child{border-left:0px solid;}
+.mainmenu  ul li:last-child{border-right:0px solid;}
+.mainmenu ul li a{text-decoration:none;color:#fff;display:block}
+.mainmenu ul li:hover{background:#52BBEA;color:#fff;font-size:17px;border:1px solid #78B9FE;-webkit-border-radius:5px 5px 5px 5px;border-radius:5px;text-shadow: 5px #000}
+.mainmenu  ul li:first-child:hover{border-radius: 10px 0px 0px 0px;}
+/*  .mainmenu  ul li:last-child:hover{border-radius: 10px 0px 0px 05px;}  */
+
+/*drop down start*/
+.mainmenu ul li ul{position:absolute;left:-999999px;border-radius: 0px 0px 10px 10px;}
+.mainmenu ul li ul li{padding:5px 5px;border-left:0px solid;border-right:0px solid #C2BD1A;border-top:1px solid #333;border-bottom:1px solid #C2BD1A;display:block;float:none}
+.mainmenu  ul li ul li:first-child{border-top:0px solid;}
+.mainmenu  ul li ul li:last-child{border-bottom:0px solid;}
+.mainmenu ul li:hover ul{left:0px;}
+.mainmenu ul li ul{background:#12884C;margin-top:10px;}
+.mainmenu ul li ul li{float:none;width:100px;padding:5px;border-bottom:1px solid #C2BD1A ;border-left:0px solid;border-right:0px solid;text-align:center;position:relative}
+.mainmenu ul li ul li a{text-decoration:none;color:#fff;}
+.mainmenu ul li ul li:hover {background:#84C67B;color:#fff;font-size:17px;border:1px solid #56tyuj;}
+.mainmenu  ul li ul li:last-child:hover{border-radius: 0px 0px 10px 10px;}
+.mainmenu  ul li ul li:first-child:hover{border-radius: 5px 5px 5px 5px;}
+
+/* child drop down start*/
+.mainmenu ul ul ul {display:none;border-radius: 5px 5px 5px 5px;position:absolute}
+.mainmenu ul ul li:hover ul{display:block;left:110px;margin-top:-22px;position:absolute}
+.mainmenu ul ul ul li:last-child:hover{border-radius: 5px 5px 5px 5px !important}
+
+.show_hide{display:none;border-radius: 5px 5px 5px 5px;}
+.show_hide li:hover ul{display:block;left:110px;margin-top:-22px}
+.show_hide li:last-child:hover{border-radius: 5px 5px 5px 5px !important}
+
+/* child > child drop down start*/
+.mainmenu ul ul ul ul{display:none;border-radius: 5px 5px 5px 5px;}
+.mainmenu ul ul ul li:hover ul{display:block;left:110px;margin-top:-22px}
